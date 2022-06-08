@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+.header img{
+    width: 8%;
+}
+.user img{
+    padding-top: 20px;
+    width: 45px;
+    border-radius: 50%;
+}
+.nav-link{
+    color: black;
+}
+/* #toggler{
+    color: green;
+} */
+.header{
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 10%;
+    display: flex;
+    background: white;
+}
+.header .navbar a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: grey;
+    margin: 0 3rem;
+}
+  
+.header .navbar a:hover {
+    font-weight: bolder;
+    color: rgb(1, 1, 100);
+    text-decoration: none;
+}
+  
+.header .icons div {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: var(--light-bg);
+    color: grey;
+    cursor: pointer;
+    text-align: center;
+    margin-left: .3rem;
+}
+  
+.header .icons div:hover {
+    color: black;
+}
+  
+.header #menu-btn {
+    display: none;
+}
+.home {
+    padding: 0;
+}
+.home .background{
+    background: url(images/background3.jpg)no-repeat;
+    background-size: cover;
+    min-height: 40rem;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+}
+.home .background .content {
+    width: 50rem;
+    position: relative;
+}
+  
+.home .background .content h3 {
+    font-size: 3rem;
+    color: rgb(43, 41, 41);
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-align: center;
+}
+  
+.home .background .content p{
+    font-size: 1.4rem;
+    color: var(--light-color);
+    line-height: 2;
+    text-align: center;
+}
+.objective{
+    padding-bottom: 70px;
+}
+.objective-content h3{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 2rem;
+}
+.objective-content p{
+    padding-top: 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.footer{
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.footer span{
+    color: rgb(1, 1, 100);
+}
+    
