@@ -21,9 +21,6 @@ body{
 .nav-link{
     color: black;
 }
-/* #toggler{
-    color: green;
-} */
 .header{
     position: static;
     top: 0;
@@ -61,7 +58,7 @@ body{
 .header .icons div:hover {
     color: black;
 }
-  
+
 .header #menu-btn {
     display: none;
 }
@@ -85,6 +82,7 @@ body{
   
 .home .background .content h3 {
     font-size: 3rem;
+    font-weight: 600;
     color: rgb(43, 41, 41);
     text-transform: capitalize;
     text-transform: uppercase;
@@ -94,7 +92,6 @@ body{
 .home .background .content p{
     font-size: 1.4rem;
     color: var(--light-color);
-    line-height: 2;
     text-align: center;
 }
 .objective{
@@ -104,6 +101,7 @@ body{
     padding-top: 30px;
     text-align: center;
     font-size: 2rem;
+    font-weight: 700;
 }
 .objective-content p{
     padding-top: 0;
@@ -120,4 +118,88 @@ body{
 .footer span{
     color: rgb(1, 1, 100);
 }
+.heading {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--black);
+    text-transform: capitalize;
+    padding-left: 1rem;
+}
+.about{
+    padding: 20px 10%;
+    font-size: 2rem;
+    color: rgb(43, 41, 41);
+}
+
+.row {
+    display: flex;
+    padding-left: 2rem;
+}
+.about .row #about-content p {
+    display: flex;
+    font-size: 1.5rem;
+    color: black;
+    padding: 1rem 0;
+}
+
+.contact {
+    padding: 2rem 10%;
+}
+#heading h3{
+    color: black;
+}
+  
+.contact .heading {
+    color: black;
+    text-transform: uppercase;
+}
+  
+.contact .row {
+    display: flex;
+} 
+.contact .row form {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 20rem;
+            flex: 1 1 20rem;
+    background: var(--white);
+    padding: 2rem;
+}
+  
+.contact .row form h3 {
+    font-size: 2rem;
+    color: var(--black);
+    text-transform: capitalize;
+    margin-top: -10px;
+}
+  
+.contact .row form .box {
+    margin: .3rem 0;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: .1rem solid rgba(0,0,0,.3);
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+.contact .row form .box:focus {
+    border-color: rgb(1, 1, 100);
+}
+.contact .row form textarea {
+    height: 5rem;
+    resize: none;
+}
+.btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}    
+.btn:hover {
+    background: grey;
+}
+
     
