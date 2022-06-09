@@ -131,10 +131,9 @@ body{
     font-size: 2rem;
     color: rgb(43, 41, 41);
 }
-
 .row {
     display: flex;
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 .about .row #about-content p {
     display: flex;
