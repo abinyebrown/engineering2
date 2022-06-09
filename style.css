@@ -92,7 +92,7 @@ body{
 .home .background .content p{
     font-size: 1.4rem;
     color: var(--light-color);
-    text-align: center;
+    text-align: justify;
 }
 .objective{
     padding-bottom: 70px;
@@ -104,9 +104,8 @@ body{
     font-weight: 700;
 }
 .objective-content p{
-    padding-top: 0;
-    text-align: center;
-    font-size: 1.1rem;
+    text-align: justify;
+    font-size: 1.5rem;
 }
 .footer{
     font-size: 0.7rem;
