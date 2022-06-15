@@ -13,11 +13,6 @@ body{
 .header img{
     width: 8%;
 }
-.user img{
-    padding-top: 20px;
-    width: 45px;
-    border-radius: 50%;
-}
 .nav-link{
     color: black;
 }
@@ -36,13 +31,24 @@ body{
     color: grey;
     margin: 0 3rem;
 }
-  
+
+.header .navbar a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: rgb(1, 1, 100);
+    transition: all 0.5s;
+}
+.header .navbar a:hover::after{
+    width: 100%;
+    text-decoration: none;
+}
 .header .navbar a:hover {
     font-weight: bolder;
     color: rgb(1, 1, 100);
     text-decoration: none;
 }
-  
 .header .icons div {
     height: 5rem;
     width: 5rem;
@@ -59,7 +65,10 @@ body{
     color: black;
 }
 
-.header #menu-btn {
+#menu-btn{
+    width: 50%;
+    margin-left: 180px;
+    margin-top: 10px;
     display: none;
 }
 .home {
@@ -70,9 +79,7 @@ body{
     background-size: cover;
     min-height: 40rem;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     position: relative;
 }
 .home .background .content {
@@ -93,6 +100,7 @@ body{
     font-size: 1.4rem;
     color: var(--light-color);
     text-align: justify;
+    margin-left: 60px;
 }
 .objective{
     padding-bottom: 70px;
@@ -157,15 +165,14 @@ body{
     display: flex;
 } 
 .contact .row form {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 20rem;
-            flex: 1 1 20rem;
+    flex: 1 1 20rem;
     background: var(--white);
     padding: 2rem;
 }
   
 .contact .row form h3 {
     font-size: 2rem;
+    font-weight: bolder;
     color: var(--black);
     text-transform: capitalize;
     margin-top: -10px;
@@ -189,7 +196,6 @@ body{
 .btn {
     display: inline-block;
     margin-top: 0.5rem;
-    background-color: black;
     border-radius: 50px;
     color: white;
     cursor: pointer;
@@ -199,5 +205,170 @@ body{
 .btn:hover {
     background: grey;
 }
+.projects{
+    padding: 20px 10%;
+    font-size: 2rem;
+    color: rgb(43, 41, 41);
+}
+.projects .box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+  
+.projects .box-container .box {
+    cursor: pointer;
+}
+.projects .box-container .box .image img {
+    width: 100%;
+}
+  
+.projects .box-container .box .content .info {
+    padding: 1rem 5rem;
+}
+  
+.projects .box-container .box .content .info h3 {
+    font-size: 1.5rem;
+    color: grey;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.projects .box-container .box .content .info h3:hover{
+    color: rgb(1, 1, 100);
+} 
+.box:hover{
+    text-decoration: none;
+}
+.services{
+    padding: 20px 10%;
+    font-size: 2rem;
+    color: rgb(43, 41, 41);
+}
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* @media (max-width: 1200px) {
+    .header {
+      padding: 1.5rem 5.2rem;
+    }
+    section {
+      padding: 3rem 5%;
+    }
+    .logo{
+        width: 100%;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    html {
+      font-size: 70%;
+    }
+    section {
+      padding: 3rem 4rem;
+    }
+    .header img{
+        width: 20%;
+    }
+    .header #menu-btn {
+      display: inline-block;
+    }
+    .header .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      border-top: var(--border);
+      border-bottom: var(--border);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+              clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      -webkit-transition: .2s linear;
+      transition: .2s linear;
+    }
+    .header .navbar.active {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a {
+      display: block;
+      margin: 2rem;
+    }
+    #menu-btn{
+        display: block;
+        cursor: pointer;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .home .slide {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+    .home .slide .content {
+      text-align: center;
+    }
+    .home .slide .content h3 {
+      font-size: 3rem;
+    }
+    .header img{
+        width: 20%;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 40%;
+    }
+    .about .row .content h3 {
+      font-size: 2.5rem;
+    }
+    .header img{
+        width: 20%;
+    }
+  } 
+
+     */
