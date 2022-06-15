@@ -290,7 +290,7 @@ body{
 
 
 
- /* @media (max-width: 1200px) {
+ @media (max-width: 1200px) {
     .header {
       padding: 1.5rem 5.2rem;
     }
@@ -316,16 +316,8 @@ body{
       display: inline-block;
     }
     .header .navbar {
-      position: absolute;
-      top: 99%;
-      left: 0;
-      right: 0;
-      background: var(--white);
-      border-top: var(--border);
-      border-bottom: var(--border);
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
               clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-      -webkit-transition: .2s linear;
       transition: .2s linear;
     }
     .header .navbar.active {
@@ -337,8 +329,10 @@ body{
       margin: 2rem;
     }
     #menu-btn{
+        font-size: 300%;
         display: block;
         cursor: pointer;
+        padding-right: 60%;
     }
   }
   
@@ -355,7 +349,8 @@ body{
       font-size: 3rem;
     }
     .header img{
-        width: 20%;
+        width: 30%;
+        height: 70px;
     }
   }
   
@@ -371,4 +366,4 @@ body{
     }
   } 
 
-     */
+    
